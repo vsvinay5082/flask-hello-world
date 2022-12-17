@@ -1,7 +1,7 @@
 FROM python:3-alpine3.10
 LABEL project="first hello-world"
 EXPOSE 5000
-RUN mkdir flask-hello world
+RUN mkdir /flask-hello world
 ADD . /flask-hello-world
 RUN cd flask-hello-world && \
         mv hello.py app.py && \
